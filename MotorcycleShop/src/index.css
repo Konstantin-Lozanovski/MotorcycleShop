@@ -138,3 +138,16 @@ h1, h2, h3 {
   gap: 25px;
   padding-top: 30px;
 }
+
+
+@media (max-width: 900px) {
+  .bike-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bike-grid {
+    grid-template-columns: 1fr;
+  }
+}

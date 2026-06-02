@@ -153,15 +153,38 @@
 
     transform: translateY(-2px);
 }
+@media (max-width: 900px) {
+    .header {
+        padding: 1rem 5%;
+    }
 
-/*.logo {*/
-/*    color: red !important;*/
-/*}*/
+    .header nav {
+        gap: 1rem;
+    }
 
-/*.header nav a {*/
-/*    color: yellow !important;*/
-/*}*/
+    .header nav a {
+        font-size: 0.85rem;
+    }
 
-/*.header-btn {*/
-/*    color: white !important;*/
-/*}*/
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+

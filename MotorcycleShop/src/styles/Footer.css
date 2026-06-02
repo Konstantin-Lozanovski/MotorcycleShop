@@ -112,3 +112,24 @@
     text-shadow: 0 0 10px var(--accent);
     transform: translateX(5px);
 }
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-brand p {
+        margin: 10px auto;
+    }
+
+    .social-icons {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 50px 5% 20px;
+    }
+}

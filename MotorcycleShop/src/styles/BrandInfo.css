@@ -25,3 +25,10 @@
   color: var(--accent);
   font-size: 2rem;
 }
+
+@media (max-width: 900px) {
+  .stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

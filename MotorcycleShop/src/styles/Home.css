@@ -50,3 +50,24 @@
     font-family: var(--font-display);
     text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
 }
+@media (max-width: 900px) {
+    .bike-showcase-image {
+        height: 40vh;
+    }
+
+    .image-overlay {
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 60px 5%;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+}

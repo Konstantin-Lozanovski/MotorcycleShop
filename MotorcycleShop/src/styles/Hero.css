@@ -59,3 +59,37 @@
 .hero-image img:hover {
     transform: rotate(0deg) scale(1.05);
 }
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 450px;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -49,3 +49,8 @@
     color: var(--accent);
     font-weight: bold;
 }
+@media (max-width: 900px) {
+    .bike-card img {
+        height: 180px;
+    }
+}
