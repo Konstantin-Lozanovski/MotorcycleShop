@@ -1,0 +1,112 @@
+.bike-page {
+    padding: 100px 10%;
+}
+
+.bike-page-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.bike-page-container img {
+    width: 500px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.bike-page-container button {
+    margin-top: 20px;
+}
+
+.bike-page-info h1 {
+    font-size: 3rem;
+    font-family: var(--font-display);
+}
+
+.bike-page-info .price {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.bike-page-info ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.bike-page-info ul li {
+    margin-bottom: 10px;
+    color: var(--text-muted);
+}
+
+.back-btn {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+
+    padding: 10px 16px;
+
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 0 0 transparent;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    background: rgba(0, 229, 255, 0.1);
+}
+
+.related-section {
+    margin-top: 80px;
+}
+
+.related-section h2 {
+    font-family: var(--font-display);
+    margin-bottom: 30px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.related-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow);
+}
+
+.related-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.related-card h3 {
+    padding: 10px 15px 0;
+}
+
+.related-card p {
+    padding: 0 15px 10px;
+}

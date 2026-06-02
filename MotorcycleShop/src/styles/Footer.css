@@ -1,0 +1,99 @@
+.footer {
+    background: linear-gradient(
+            180deg,
+            var(--bg),
+            #070a0f
+    );
+
+    border-top: 1px solid var(--border);
+
+    padding: 70px 10% 20px;
+    margin-top: 80px;
+}
+
+/* MAIN GRID */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+/* BRAND SECTION */
+.footer-brand h2 {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.8rem;
+
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.footer-brand p {
+    margin-top: 10px;
+    max-width: 250px;
+
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* LINKS */
+.footer-links h3,
+.footer-social h3 {
+    color: var(--text);
+    margin-bottom: 15px;
+
+    font-family: var(--font-display);
+    letter-spacing: 1px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+
+    color: var(--text-muted);
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.footer-links li:hover {
+    color: var(--accent);
+    transform: translateX(5px);
+}
+
+/* SOCIAL */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons span {
+    color: var(--text-muted);
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.social-icons span:hover {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+    transform: translateX(5px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

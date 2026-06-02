@@ -1,0 +1,27 @@
+.brand-info {
+  padding: 90px 10%;
+  text-align: center;
+}
+
+.brand-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.brand-info p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.stats h3 {
+  color: var(--accent);
+  font-size: 2rem;
+}

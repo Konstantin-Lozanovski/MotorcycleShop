@@ -1,0 +1,27 @@
+:root {
+    /* Colors */
+    --bg: #0b0f14;
+    --bg-soft: #111823;
+    --card: #151c28;
+    --card-hover: #1c2535;
+
+    --text: #e6e9ef;
+    --text-muted: #1c2535;
+
+    --accent: #00e5ff;      /* cyber blue */
+    --accent-2: #ff3d81;    /* neon pink */
+    --accent-3: #9bff00;    /* electric green */
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    /* Shadows */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    --glow: 0 0 15px rgba(0, 229, 255, 0.35);
+
+    /* Radius */
+    --radius: 14px;
+
+    /* Fonts */
+    --font-main: "Inter", system-ui, sans-serif;
+    --font-display: "Orbitron", sans-serif;
+}

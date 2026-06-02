@@ -1,0 +1,61 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 90vh;
+
+    padding: 0 10%;
+
+    background:
+            radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.08), transparent 40%),
+            radial-gradient(circle at 80% 60%, rgba(255, 61, 129, 0.08), transparent 40%),
+            var(--bg);
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.hero p {
+    margin-top: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-buttons .secondary {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    box-shadow: none;
+}
+
+.hero-buttons .secondary:hover {
+    background: rgba(0, 229, 255, 0.1);
+}
+
+.hero-image img {
+    width: 600px;
+    max-width: 100%;
+    filter: drop-shadow(0 0 30px rgba(0, 229, 255, 0.25));
+    transform: rotate(-5deg);
+    transition: 0.4s;
+}
+
+.hero-image img:hover {
+    transform: rotate(0deg) scale(1.05);
+}
