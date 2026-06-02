@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src="../../public/images/Hero-Bike.png" alt="Motorcycle" />
+        <img src="/images/Hero-Bike.png" alt="Motorcycle" />
       </div>
     </section>
   );
