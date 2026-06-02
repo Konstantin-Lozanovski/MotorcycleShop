@@ -97,3 +97,18 @@
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+.social-icons a {
+    color: var(--text-muted);
+    text-decoration: none;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+    transform: translateX(5px);
+}

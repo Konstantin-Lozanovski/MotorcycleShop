@@ -1,4 +1,5 @@
 import "../styles/Footer.css";
+import { FaInstagram, FaFacebook, FaXTwitter, FaYoutube, FaDiscord } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -30,11 +31,11 @@ export default function Footer() {
           <h3>Follow Us</h3>
 
           <div className="social-icons">
-            <span>Instagram</span>
-            <span>Facebook</span>
-            <span>X</span>
-            <span>YouTube</span>
-            <span>Discord</span>
+            <a href="https://instagram.com">Instagram <FaInstagram /></a>
+            <a href="https://facebook.com">Facebook <FaFacebook /></a>
+            <a href="https://x.com"><FaXTwitter /></a>
+            <a href="https://youtube.com">Youtube <FaYoutube /></a>
+            <a href="https://discord.com">Discord <FaDiscord /></a>
           </div>
         </div>
 
