@@ -2,8 +2,11 @@ import {Routes, Route} from "react-router-dom"
 import Header from "./components/Header"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
-import {useEffect, useState} from "react"
+import About from "./pages/About"
+import Products from "./pages/Products"
+import CategoryPage from "./pages/CategoryPage"
 import BikeDetailsPage from "./pages/BikeDetailsPage.jsx";
+import Cart from "./pages/Cart"
 
 function App() {
 
@@ -25,6 +28,18 @@ function App() {
           />
           <Route
             path="/contact" element={<Contact/>}
+          />
+          <Route
+            path="/about" element={<About/>}
+          />
+          <Route
+            path="/products" element={<Products/>}
+          />
+          <Route
+            path="/products/:category" element={<CategoryPage/>}
+          />
+          <Route
+            path="/cart" element={<Cart/>}
           />
         </Routes>
       </main>

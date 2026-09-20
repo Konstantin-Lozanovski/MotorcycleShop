@@ -1,11 +1,18 @@
 import {useNavigate, useParams} from "react-router-dom";
 import bikes from "../data/bikes";
 import "../styles/BikeDetails.css";
+import {useEffect} from "react";
+import { useCart } from "../context/cartContext";
 
 function BikeDetailsPage() {
   const { id } = useParams();
 
   const navigate = useNavigate();
+  const { addToCart } = useCart();
+
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: "instant"})
+  }, [id])
 
   const bike = bikes.find((b) => b.id === Number(id));
 
@@ -42,7 +49,7 @@ function BikeDetailsPage() {
 
           <p>{bike.description}</p>
 
-          <button>Add to Cart</button>
+          <button onClick={() => addToCart(bike)}>Add to Cart</button>
         </div>
 
       </div>

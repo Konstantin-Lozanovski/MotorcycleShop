@@ -4,11 +4,14 @@ import {BrowserRouter} from "react-router-dom"
 import App from "./App.jsx"
 import "./index.css"
 import "./styles/Variables.css"
+import { CartProvider } from "./context/CartContext.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter future={{v7_relativeSplatPath: true, v7_startTransition: true}}>
-      <App/>
+      <CartProvider>
+        <App/>
+      </CartProvider>
     </BrowserRouter>
   </StrictMode>
 )

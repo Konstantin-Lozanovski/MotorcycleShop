@@ -50,6 +50,29 @@
     font-family: var(--font-display);
     text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
 }
+
+.brand-video {
+    padding-top: 40px;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 @media (max-width: 900px) {
     .bike-showcase-image {
         height: 40vh;

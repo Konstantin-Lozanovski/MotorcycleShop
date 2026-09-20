@@ -1,0 +1,92 @@
+.featured-slider {
+  position: relative;
+}
+
+.slider-window {
+  overflow: hidden;
+  padding: 10px 0 20px;
+}
+
+.slider-track {
+  display: flex;
+  transform: translateX(calc(var(--slide) * -33.3333%));
+  transition: transform 0.45s ease;
+}
+
+.slider-card {
+  flex: 0 0 33.3333%;
+  min-width: 0;
+  padding: 0 12px;
+}
+
+.slider-card .bike-card {
+  height: 100%;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 12px;
+}
+
+.slider-arrow {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--accent);
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 229, 255, 0.12);
+  box-shadow: var(--glow);
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+.slider-dots button.active {
+  width: 25px;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .slider-track {
+    transform: translateX(calc(var(--slide) * -50%));
+  }
+
+  .slider-card {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-track {
+    transform: translateX(calc(var(--slide) * -100%));
+  }
+
+  .slider-card {
+    flex-basis: 100%;
+    padding: 0;
+  }
+}

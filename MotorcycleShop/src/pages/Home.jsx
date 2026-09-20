@@ -19,6 +19,23 @@ function Home() {
         </div>
       </section>
 
+      <section className="brand-video section">
+        <div className="section-header">
+          <h2>Built for the ride</h2>
+          <p className="text-muted">
+            Get inspired by the machines, roads, and riding culture behind Apex Moto.
+          </p>
+        </div>
+        <div className="video-frame">
+          <iframe
+            title="Motorcycle brand film"
+            src="https://www.youtube.com/embed/PSHTkGHfSVo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
       {/* FEATURED MOTORCYCLES */}
       <section id="products" className="section">
         <div className="section-header">
